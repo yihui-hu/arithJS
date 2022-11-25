@@ -39,7 +39,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Performance differences from C</h4>
                     <hr></hr>
-                    <h4>I have not rigorously tested the JS implementation against the original C code, but from what little testing I did, the JS implementation, with little / no optimization, seemed to run between ~10-28x slower than C. Timing results available <a className="link"href="https://gist.github.com/yihui-hu/484c31bdbf6a73192b8044aa67a0972e" target="_blank">here</a>.
+                    <h4>I have not rigorously tested the JS implementation against the original C code, but from what little testing I did, the JS implementation, with no optimization, seemed to run between ~10-28x slower than C. Timing results available <a className="link"href="https://gist.github.com/yihui-hu/484c31bdbf6a73192b8044aa67a0972e" target="_blank">here</a>.
                     </h4>
                     <br></br>
                     <h4 className="header_text">On porting C code to JavaScript</h4>

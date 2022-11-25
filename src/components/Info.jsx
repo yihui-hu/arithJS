@@ -12,7 +12,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Origin of the project:</h4>
                     <hr></hr>
-                    <h4>arith was an image compressor / decompressor that Tobias F. and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
+                    <h4>arith started as a CLI image compressor / decompressor that Tobias F. and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
                     </h4>
                     <br></br>
                     <h4 className="header_text">What is a ppm file?</h4>
@@ -40,7 +40,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">On porting C code to JavaScript</h4>
                     <hr></hr>
-                    <h4>JavaScript has no built in integer types, so manipulating bits becomes weird. I had to do it manually with strings: "101010". JavaScript also can't read / write all 256 ASCII characters natively, so I had to design my own decoding table that mapped each value between 0-255 to a UTF-8 character. There are other quirks with porting C to JavaScript; might do a more comprehensive write-up in a few.
+                    <h4>JavaScript has no built in integer types, so manipulating bits becomes weird. I had to do it manually with strings: "101010". JavaScript also doesn't have native support for reading / writing all 256 ASCII characters, so I had to design my own decoding table that mapped each value between 0-255 to a UTF-8 character. There are other quirks with porting C to JavaScript; might do a more comprehensive write-up in a few.
                     </h4>
                     <br></br>
                     <h4 className="header_text">Decompressor produces a P3 ppm image? <br></br> Why not P6 like the original?</h4>

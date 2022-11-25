@@ -10,7 +10,7 @@ const Info = () => {
                 <div className={isDesktop ? "info_card_left" : "info_card_left_mobile"}>
                     <h3>ⓘ Info</h3>
                     <br></br>
-                    <h4 className="header_text">Origin of the project:</h4>
+                    <h4 className="header_text">Origin of the project</h4>
                     <hr></hr>
                     <h4>arith started as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
                     </h4>
@@ -29,6 +29,10 @@ const Info = () => {
                     <hr></hr>
                     <h4>Source files / Github repo available soon. Let me clean up my mess first...
                     </h4>
+                    <br></br>
+                    <h4 className="header_text">There's an issue / bug...</h4>
+                    <hr></hr>
+                    <h4>Sorry about that. Please let me know via email, yyihui.hu (at) gmail.com.</h4>
                 </div>
                 <div className={isDesktop ? "info_card_right" : "info_card_right_mobile"}>
                     <h3>✎ Notes</h3>

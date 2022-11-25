@@ -1,0 +1,61 @@
+.link, 
+.link:hover, 
+.link:visited, 
+.link:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color:#0057FF !important;
+    transition: ease 0.s;
+}
+
+.info {
+    margin-top: 4vw;
+    font-size: 1.2vw;
+}
+
+.header_text {
+    font-family: "IBM Plex Mono Bold", sans-serif;
+}
+
+.info_mobile {
+    margin-top: 5vw;
+    font-size: 3.5vw;
+}
+
+.info_card_div {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.info_card_div_mobile {
+    display: block;
+}
+
+.info_card_left {
+    border-radius: 1.5vw;
+    padding: 2vw;
+    width: 60vw;
+    background-color: white;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.info_card_right {
+    border-radius: 1.5vw;
+    padding: 2vw;
+    width: 35.5vw;
+    background-color: white;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.info_card_left_mobile,
+.info_card_right_mobile {
+    border-radius: 3vw;
+    padding: 5vw;
+    width: 94vw;
+    background-color: white;
+    margin-top: 3vw;
+    border: 1px solid rgb(226, 226, 226);
+}

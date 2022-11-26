@@ -61,7 +61,7 @@
 }
 
 .italic {
-    font-family: "IBM Plex Mono Italic", "IBM Plex Mono", sans-serif;
+    font-family: "IBM Plex Mono Italic", "IBM Plex Mono Regular", sans-serif;
 }
 
 .highlight {

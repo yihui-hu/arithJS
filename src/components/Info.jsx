@@ -37,7 +37,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">I found an issue / bug!</h4>
                     <hr></hr>
-                    <h4>I'm just bad. Please let me know via email, yyihui.hu (at) gmail.com!</h4>
+                    <h4>I'm bad. Please let me know at yyihui.hu @ gmail.com!</h4>
                 </div>
                 <div className={isDesktop ? "info_card_right" : "info_card_right_mobile"}>
                     <h3>✎ Notes</h3>
@@ -59,7 +59,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Known issues / bugs / oversights </h4>
                     <hr></hr>
-                    <h4>The app expects a clean, well-formed ppm file without any comments. It doesn't work well with images with transparent backgrounds. And yes, only decompresses into huge P3 files.
+                    <h4>The app expects a clean, well-formed ppm file without any comments. It doesn't work well with images with transparent backgrounds.
                     </h4>
                 </div>
             </div>

@@ -59,3 +59,11 @@
     margin-top: 3vw;
     border: 1px solid rgb(226, 226, 226);
 }
+
+.italic {
+    font-family: "IBM Plex Mono Italic";
+}
+
+.highlight {
+    color: #FF5C00;
+}

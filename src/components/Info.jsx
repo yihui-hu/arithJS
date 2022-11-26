@@ -10,9 +10,9 @@ const Info = () => {
                 <div className={isDesktop ? "info_card_left" : "info_card_left_mobile"}>
                     <h3>ⓘ Info</h3>
                     <br></br>
-                    <h4 className="header_text">Origin of the project</h4>
+                    <h4 className="header_text">How to use</h4>
                     <hr></hr>
-                    <h4>arith started as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
+                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith© compressed format</span>. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">HINT:</span> If you compress and decompress an image in one go and hover over it, a nifty color picker / zoom inspector will appear for you to play around with!
                     </h4>
                     <br></br>
                     <h4 className="header_text">What is a ppm file?</h4>
@@ -25,14 +25,19 @@ const Info = () => {
                     <h4>The compression algorithm relies on bitpacking, quantization, as well as discrete cosine transformations. Briefly speaking, a ppm (P6) image is read in and processed, and information not easily discernable by the naked eye is discarded. At the end, what info remains about a single pixel is packed into 1 byte instead of, say, 4-8 bytes. So that's quite a lot of space saved!
                     </h4>
                     <br></br>
-                    <h4 className="header_text">Source files?</h4>
+                    <h4 className="header_text">Origin of the project</h4>
                     <hr></hr>
-                    <h4>Source files / Github repo available soon. Let me clean up my mess first...
+                    <h4>arith started as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
                     </h4>
                     <br></br>
-                    <h4 className="header_text">There's an issue / bug...</h4>
+                    <h4 className="header_text">Source files?</h4>
                     <hr></hr>
-                    <h4>Sorry about that. Please let me know via email, yyihui.hu (at) gmail.com.</h4>
+                    <h4>Available <a href="https://github.com/yihui-hu/arith" target="_blank" className="link">here</a> on GitHub!
+                    </h4>
+                    <br></br>
+                    <h4 className="header_text">I found an issue / bug!</h4>
+                    <hr></hr>
+                    <h4>I'm just bad. Please let me know via email, yyihui.hu (at) gmail.com!</h4>
                 </div>
                 <div className={isDesktop ? "info_card_right" : "info_card_right_mobile"}>
                     <h3>✎ Notes</h3>
@@ -50,6 +55,11 @@ const Info = () => {
                     <h4 className="header_text">Decompressor produces a P3 ppm image? <br></br> Why not P6 like the original?</h4>
                     <hr></hr>
                     <h4>JS can't write ASCII characters above 127, at least not without a custom encoding table. Might get around to it some time later but I'm swamped with final projects. At least you get to see the RGB vals in plain text; feature, not bug :)
+                    </h4>
+                    <br></br>
+                    <h4 className="header_text">Known issues / bugs / oversights </h4>
+                    <hr></hr>
+                    <h4>The app expects a clean, well-formed ppm file without any comments. It doesn't work well with images with transparent backgrounds. And yes, only decompresses into huge P3 files.
                     </h4>
                 </div>
             </div>

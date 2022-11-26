@@ -37,7 +37,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">I found an issue / bug!</h4>
                     <hr></hr>
-                    <h4>I'm bad. Please let me know via email, yyihui.hu @ gmail.com. Thanks :)</h4>
+                    <h4>I'm bad. Please let me know via email → yyihui.hu @ gmail.com. Thanks :)</h4>
                 </div>
                 <div className={isDesktop ? "info_card_right" : "info_card_right_mobile"}>
                     <h3>✎ Notes</h3>

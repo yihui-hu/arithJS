@@ -11,6 +11,7 @@ import {
 } from '../js/handle_sample_image';
 import { resetOriginalUpload } from "../js/reset_upload"
 import useMediaQuery from "../hooks/useMediaQuery";
+import { motion } from 'framer-motion'
 
 const OriginalBox = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
@@ -27,8 +28,18 @@ const OriginalBox = () => {
 
     return (
         <>
-            <div className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}>
-                <div className={isDesktop ? "upload_image_box" : "upload_image_box_mobile"} id="upload_image_box" onClick={handleClick}>
+            <motion.div className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 1,
+                delay: 0.2,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}>
+                <div 
+                    className={isDesktop ? "upload_image_box" : "upload_image_box_mobile"} 
+                    id="upload_image_box" 
+                    onClick={handleClick}>
                     <div id="upload_image_text">
                         <h3>Upload ppm (P6) image</h3>
                         <img className={isDesktop ? "upload_blue" : "upload_blue_mobile"} src={upload_blue}/>
@@ -76,7 +87,7 @@ const OriginalBox = () => {
                     </div>
                     <h3 className={isDesktop ? "decompress_hint" : "decompress_hint_mobile"} id="decompress_hint">Try downloading the image & <br></br>decompressing it below!</h3>
                 </div>
-            </div>
+            </motion.div>
             {/* always hidden */}
             <input type="file"
                 id="original_file"

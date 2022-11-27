@@ -5,6 +5,7 @@ import upload_black from "../assets/upload_black.svg"
 import { read_compressed_image } from '../js/read_compressed_image';
 import { resetCompressedUpload } from "../js/reset_upload"
 import useMediaQuery from "../hooks/useMediaQuery";
+import { motion } from "framer-motion"
 
 const CompressedBox = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
@@ -21,7 +22,15 @@ const CompressedBox = () => {
 
     return (
         <>
-            <div className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}>
+            <motion.div 
+                className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    duration: 1,
+                    delay: 0.4,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}>
                 <div className={isDesktop ? "upload_d_image_box" : "upload_d_image_box_mobile"} id="upload_d_image_box" onClick={handleClick}>
                     <div id="upload_d_image_text">
                         <h3>Upload arith© compressed image</h3>
@@ -61,7 +70,7 @@ const CompressedBox = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             {/* always hidden */}
             <input type="file"
                 id="compressed_file"

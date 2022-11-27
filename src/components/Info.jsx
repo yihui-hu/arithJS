@@ -1,11 +1,21 @@
 import "../styles/Info.css"
 import useMediaQuery from "../hooks/useMediaQuery"
+import { motion } from "framer-motion"
 
 const Info = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
 
     return (
-        <div className={isDesktop ? "info" : "info_mobile"} id="info">
+        <motion.div 
+            className={isDesktop ? "info" : "info_mobile"} 
+            id="info"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 1,
+                delay: 0.6,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}>
             <div className={isDesktop ? "info_card_div" : "info_card_div_mobile"}>
                 <div className={isDesktop ? "info_card_left" : "info_card_left_mobile"}>
                     <h3>ⓘ Info</h3>
@@ -63,7 +73,7 @@ const Info = () => {
                     </h4>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

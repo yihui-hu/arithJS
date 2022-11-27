@@ -58,11 +58,11 @@
     display: none;
     margin-top: 15px;
     cursor: pointer;
+    transition: ease 0.2s;
 }
 
 .upload_d_another:hover {
     color:#FF5C00;
-    transition: ease 0.2s;
 }
 
 .upload_d_another_mobile {
@@ -70,11 +70,11 @@
     display: none;
     margin-top: 2vw;
     cursor: pointer;
+    transition: ease 0.2s;
 }
 
 .upload_d_another_mobile:hover {
     color:#FF5C00;
-    transition: ease 0.2s;
 }
 
 .upload_d_image_box {

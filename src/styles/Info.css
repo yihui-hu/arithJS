@@ -4,11 +4,11 @@
 .link:active {
     color: black;
     text-decoration: underline;
+    transition: 0.2s ease;
 }
 
 .link:hover {
     color:#0057FF !important;
-    transition: ease 0.s;
 }
 
 .info {
@@ -76,9 +76,9 @@
 
 .copyright-link {
     color: rgb(180, 180, 180) !important;
+    transition: 0.4s ease;
 }
 
 .copyright-link:hover {
     color:#0057FF !important;
-    transition: 0.5s ease;
 }

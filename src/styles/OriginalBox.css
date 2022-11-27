@@ -29,17 +29,18 @@ a, a:hover, a:visited, a:active {
 
 .sample_image {
     cursor: pointer;
+    transition: ease 0.2s;
 }
 
 
 .sample_image:hover,
 .convert_link:hover {
     color:#0057FF !important;
-    transition: ease 0.2s;
 }
 
 .convert_link {
     color: black !important;
+    transition: ease 0.2s;
 }
 
 .compress_button {
@@ -81,11 +82,11 @@ a, a:hover, a:visited, a:active {
     display: none;
     margin-top: 15px;
     cursor: pointer;
+    transition: ease 0.2s;
 }
 
 .upload_another:hover {
     color:#0057FF;
-    transition: ease 0.2s;
 }
 
 .upload_another_mobile {
@@ -93,11 +94,11 @@ a, a:hover, a:visited, a:active {
     display: none;
     margin-top: 2vw;
     cursor: pointer;
+    transition: ease 0.2s;
 }
 
 .upload_another_mobile:hover {
     color:#0057FF;
-    transition: ease 0.2s;
 }
 
 .upload_image_box {

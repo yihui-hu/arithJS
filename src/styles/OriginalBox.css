@@ -271,7 +271,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .compression_sizes {
-    margin-top: -2vw;
+    margin-top: -1.5vw;
     display: flex;
     place-items: center;
     gap: 1.4vw;

@@ -58,12 +58,12 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Performance differences from C</h4>
                     <hr></hr>
-                    <h4>I have not rigorously tested the JS implementation against the original C code, but from what little testing I did, the JS code, with no optimization, seemed to run between ~10x to ~30x slower than C. Timing results available <a className="link"href="https://gist.github.com/yihui-hu/484c31bdbf6a73192b8044aa67a0972e" target="_blank">here</a>.
+                    <h4>From what limited testing I did, the JS implementation (with little to no optimization from my end) seems to run between ~10x to ~30x slower than C. Timing results available <a className="link"href="https://gist.github.com/yihui-hu/484c31bdbf6a73192b8044aa67a0972e" target="_blank">here</a>.
                     </h4>
                     <br></br>
                     <h4 className="header_text">On porting C code to JavaScript</h4>
                     <hr></hr>
-                    <h4>JS has no built-in integer types, so manipulating bits is weird. I had to do it manually with strings: "101010". JS also doesn't have native support for reading / writing all 256 ASCII characters, so I had to design my own decoding table that mapped each value between 0-255 to a UTF-8 character. And so many other quirks that I'd like to do a more comprehensive write-up on in the future.
+                    <h4>JS has no built-in integer types, so manipulating bits is weird. I had to do it manually with strings. JS also doesn't have native support for reading / writing all 256 ASCII characters, so I had to design my own decoding table that mapped each value between 0-255 to a UTF-8 character. I'm planning to do a more comprehensive write-up on these quirks in the future.
                     </h4>
                     <br></br>
                     <h4 className="header_text">Decompressor produces a P3 ppm image? <br></br> Why not P6 like the original?</h4>
@@ -73,7 +73,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Known issues / bugs / oversights </h4>
                     <hr></hr>
-                    <h4>The app does not work well with images with transparent backgrounds, and large files either take a while or completely crash the site (mostly on mobile).
+                    <h4>The app expects a clean, well-formed ppm file with no comments. Currently, it is also unable to properly compress images with transparent backgrounds, and large files either take a while or completely crash the site (mostly on mobile).
                     </h4>
                     {isDesktop ? "" :
                     <>

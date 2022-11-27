@@ -5,3 +5,8 @@
 .app_mobile {
   margin: 3vw;
 }
+
+.app-flex {
+  display: flex;
+  justify-content: space-between;
+}

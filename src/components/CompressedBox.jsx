@@ -41,32 +41,36 @@ const CompressedBox = () => {
                     <canvas id="decompressed_canvas" className="decompressed_canvas"></canvas>
                 </div>
                 {/* upload image sidepanel */}
-                <div className={isDesktop ? "upload_image_sidepanel" : ""}>
-                    <button className={isDesktop ? "decompress_button" : "decompress_button_mobile"} id="decompress_button">
-                        <a download="compressed_img.ppm" id="download_link2">
-                            <h3 className={isDesktop ? "download_link_text" : "download_link_text_mobile"}>Download decompressed image</h3>
-                        </a>
-                    </button>
-                    <div className={isDesktop ? "d_error_message" : "d_error_message_mobile"} id="d_error_message">
-                        <h3>...</h3>
-                    </div>
-                    <div className={isDesktop ? "upload_d_another" : "upload_d_another_mobile"} id="upload_d_another">
-                        <h3 onClick={resetCompressedUpload} className="upload_image_sidepanel_text">
-                            or upload another arith© compressed image
-                        </h3>
-                        <img className={isDesktop ? "upload_black" : "upload_black_mobile"} id="upload_black" src={upload_black}/>
-                    </div>
-                    <h3 className={isDesktop ? "hover_hint" : "hover_hint_mobile"} id="hover_hint">✶ Hover over the image for a surprise!</h3>
-                    <div className={isDesktop ? "inspection" : "inspection_mobile"} id="inspection">
-                        <div id="hovered_color_original_div">
-                            <h3 className={isDesktop ? "hovered_color_original_text" : "hovered_color_original_text_mobile"} id="hovered_color_original_text"></h3>
-                            <div className={isDesktop ? "hovered_color_original" : "hovered_color_original_mobile"} id="hovered_color_original"></div>
-                            <canvas className={isDesktop ? "hovered_zoom_original" : "hovered_zoom_original_mobile"} id="hovered_zoom_original"></canvas>
+                <div className={isDesktop ? "decompressed_flex" : ""}>
+                    <div>
+                        <button className={isDesktop ? "decompress_button" : "decompress_button_mobile"} id="decompress_button">
+                            <a download="compressed_img.ppm" id="download_link2">
+                                <h3 className={isDesktop ? "download_link_text" : "download_link_text_mobile"}>Download (P3) .ppm</h3>
+                            </a>
+                        </button>
+                        <div className={isDesktop ? "d_error_message" : "d_error_message_mobile"} id="d_error_message">
+                            <h3>...</h3>
                         </div>
-                        <div id="hovered_color_decompressed_div">
-                            <h3 className={isDesktop ? "hovered_color_decompressed_text" : "hovered_color_decompressed_text_mobile"} id="hovered_color_decompressed_text"></h3>
-                            <div className={isDesktop ? "hovered_color_decompressed" : "hovered_color_decompressed_mobile"} id="hovered_color_decompressed"></div>
-                            <canvas className={isDesktop ? "hovered_zoom_decompressed" : "hovered_zoom_decompressed_mobile"} id="hovered_zoom_decompressed"></canvas>
+                        <div className={isDesktop ? "upload_d_another" : "upload_d_another_mobile"} id="upload_d_another">
+                            <h3 onClick={resetCompressedUpload} className="upload_image_sidepanel_text">
+                                or upload another ppm
+                            </h3>
+                            <img className={isDesktop ? "upload_black" : "upload_black_mobile"} id="upload_black" src={upload_black}/>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className={isDesktop ? "hover_hint" : "hover_hint_mobile"} id="hover_hint">✶ Hover over the image for a surprise!</h3>
+                        <div className={isDesktop ? "inspection" : "inspection_mobile"} id="inspection">
+                            <div id="hovered_color_original_div">
+                                <h3 className={isDesktop ? "hovered_color_original_text" : "hovered_color_original_text_mobile"} id="hovered_color_original_text"></h3>
+                                <div className={isDesktop ? "hovered_color_original" : "hovered_color_original_mobile"} id="hovered_color_original"></div>
+                                <canvas className={isDesktop ? "hovered_zoom_original" : "hovered_zoom_original_mobile"} id="hovered_zoom_original"></canvas>
+                            </div>
+                            <div id="hovered_color_decompressed_div">
+                                <h3 className={isDesktop ? "hovered_color_decompressed_text" : "hovered_color_decompressed_text_mobile"} id="hovered_color_decompressed_text"></h3>
+                                <div className={isDesktop ? "hovered_color_decompressed" : "hovered_color_decompressed_mobile"} id="hovered_color_decompressed"></div>
+                                <canvas className={isDesktop ? "hovered_zoom_decompressed" : "hovered_zoom_decompressed_mobile"} id="hovered_zoom_decompressed"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>

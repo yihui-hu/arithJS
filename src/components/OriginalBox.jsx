@@ -27,7 +27,7 @@ const OriginalBox = () => {
     }
 
     return (
-        <>
+        <div>
             <motion.div className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,31 +48,21 @@ const OriginalBox = () => {
                 <div className={isDesktop ? "image_canvas" : "image_canvas_mobile"} id="image_canvas">
                     <canvas id="original_canvas" className="original_canvas"></canvas>
                 </div>
-                {/* upload image sidepanel */}
-                <div className={isDesktop ? "upload_image_sidepanel" : ""}>
-                    <button className={isDesktop ? "compress_button" : "compress_button_mobile"} id="compress_button">
-                        <a download="compressed_img.ppm" id="download_link">
-                            <h3 className={isDesktop ? "download_link_text" : "download_link_text_mobile"}>Download compressed image</h3>
-                        </a>
-                    </button>
-                    <div className={isDesktop ? "error_message" : "error_message_mobile"} id="error_message">
-                        <h3>...</h3>
-                    </div>
-                    <div className={isDesktop ? "upload_another" : "upload_another_mobile"} id="upload_another">
-                        <h3 onClick={resetOriginalUpload} className="upload_image_sidepanel_text">
-                            or upload another ppm (P6) image
-                        </h3>
-                        <img className={isDesktop ? "upload_black" : "upload_black_mobile"} src={upload_black}/>
-                    </div>
-                    <div className={isDesktop ? "compression_data" : "compression_data_mobile"} id="compression_data">
-                        <h3 className={isDesktop ? "percentage" : "percentage_mobile"} id="percentage">/%</h3>
-                        <h3 className={isDesktop ? "percentage_text" : "percentage_text_mobile"}id="percentage_text">reduction in file size!</h3>
-                        <div className={isDesktop ? "compression_sizes" : "compression_sizes_mobile"} id="compression_sizes">
-                            <span className={isDesktop ? "original_size" : "original_size_mobile"} id="original_size">/</span>
-                            <span className={isDesktop ? "original_unit" : "original_unit_mobile"} id="original_unit">mb</span>
-                            <img  className={isDesktop ? "arrow" : "arrow_mobile"} id="arrow" src={arrow}/>
-                            <span className={isDesktop ? "compressed_size" : "compressed_size_mobile"} id="compressed_size">/</span>
-                            <span className={isDesktop ? "compressed_unit" : "compressed_unit_mobile"} id="compressed_unit">mb</span>
+                <div className={isDesktop ? "original-flex" : ""}>
+                    <div>
+                        <button className={isDesktop ? "compress_button" : "compress_button_mobile"} id="compress_button">
+                            <a download="compressed_img.ppm" id="download_link">
+                                <h3 className={isDesktop ? "download_link_text" : "download_link_text_mobile"}>Download arith© .ppm</h3>
+                            </a>
+                        </button>
+                        <div className={isDesktop ? "error_message" : "error_message_mobile"} id="error_message">
+                            <h3>...</h3>
+                        </div>
+                        <div className={isDesktop ? "upload_another" : "upload_another_mobile"} id="upload_another">
+                            <h3 onClick={resetOriginalUpload} className="upload_image_sidepanel_text">
+                                or upload another ppm
+                            </h3>
+                            <img className={isDesktop ? "upload_black" : "upload_black_mobile"} src={upload_black}/>
                         </div>
                     </div>
                     <div className={isDesktop ? "sample_images" : "sample_images_mobile"} id="sample_images">
@@ -85,7 +75,20 @@ const OriginalBox = () => {
                         <br></br>
                         <h3>Or convert your images to ppm <a className="convert_link" href="https://convertio.co/png-ppm/" target="_blank">here ↗</a></h3>
                     </div>
-                    <h3 className={isDesktop ? "decompress_hint" : "decompress_hint_mobile"} id="decompress_hint">Try downloading the image & <br></br>decompressing it below!</h3>
+                    <div className={isDesktop ? "compression_data" : "compression_data_mobile"} id="compression_data">
+                        <div className={isDesktop ? "percentage-flex" : ""}>
+                            <h3 className={isDesktop ? "percentage" : "percentage_mobile"} id="percentage">/%</h3>
+                            <h3 className={isDesktop ? "percentage_text" : "percentage_text_mobile"}id="percentage_text">reduction in file size!</h3>
+                        </div>
+                        <div className={isDesktop ? "compression_sizes" : "compression_sizes_mobile"} id="compression_sizes">
+                            <span className={isDesktop ? "original_size" : "original_size_mobile"} id="original_size">/</span>
+                            <span className={isDesktop ? "original_unit" : "original_unit_mobile"} id="original_unit">mb</span>
+                            <img  className={isDesktop ? "arrow" : "arrow_mobile"} id="arrow" src={arrow}/>
+                            <span className={isDesktop ? "compressed_size" : "compressed_size_mobile"} id="compressed_size">/</span>
+                            <span className={isDesktop ? "compressed_unit" : "compressed_unit_mobile"} id="compressed_unit">mb</span>
+                        </div>
+                    </div>
+                    {/* <h3 className={isDesktop ? "decompress_hint" : "decompress_hint_mobile"} id="decompress_hint">Try downloading the image & <br></br>decompressing it below!</h3> */}
                 </div>
             </motion.div>
             {/* always hidden */}
@@ -95,7 +98,7 @@ const OriginalBox = () => {
                 onChange={handleChange}
                 ref={hiddenFileInput}
             />
-        </>
+        </div>
     )
 }
 

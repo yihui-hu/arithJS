@@ -12,8 +12,10 @@ function App() {
   return (
     <div className={isDesktop ? "app" : "app_mobile"}>
       <Header />
-      <OriginalBox/>
-      <CompressedBox/>
+      <div className={isDesktop ? "app-flex" : ""}>
+        <OriginalBox/>
+        <CompressedBox/>
+      </div>
       <Info />
     </div>
   )

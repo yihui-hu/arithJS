@@ -1,8 +1,7 @@
 @import "ibm-plex.css";
 
 .upload_image_div {
-    display: flex;
-    margin-top: 1.5vw;
+    display: block;
 }
 
 .upload_image_div_mobile {
@@ -10,8 +9,9 @@
     display: block;
 }
 
-.upload_image_sidepanel {
-    margin-left: 1.5vw;
+.decompressed_flex {
+    display: flex;
+    gap: 1.5vw;
 }
 
 .convert_link {
@@ -19,12 +19,13 @@
 }
 
 .decompress_button {
-    width: 25vw;
+    width: 18vw;
     height: 4vw;
     border: 0px solid black;
     color: white;
     background-color: rgba(255, 0, 0, 0.20);
     border-radius: 0 0 2vw 0;
+    margin-top: 1.5vw;
 }
 
 .decompress_button_mobile {
@@ -56,7 +57,7 @@
 .upload_d_another {
     font-size: 1vw;
     display: none;
-    margin-top: 15px;
+    margin-top: 0.5vw;
     cursor: pointer;
     transition: ease 0.2s;
 }
@@ -78,8 +79,8 @@
 }
 
 .upload_d_image_box {
-    width: 60vw;
-    height: 36vw;
+    width: 47.75vw;
+    height: 30vw;
     background: #F9E6DE;
     border-radius: 1.5vw;
     border: 2.5px solid #FF5C00;
@@ -148,8 +149,8 @@
 }
 
 .d_image_canvas {
-    width: 60vw;
-    height: 36vw;
+    width: 47.75vw;
+    height: 30vw;
     background: #000000;
     border-radius: 1.5vw;
     display: none;
@@ -218,7 +219,7 @@
 
 .inspection {
     display: none;
-    margin-top: 5vw;
+    margin-top: 1.2vw;
     gap: 1.5vw;
 }
 
@@ -231,7 +232,8 @@
 .hovered_color_original_text,
 .hovered_color_decompressed_text {
     font-size: 1.2vw;
-    margin-bottom: 1vw;
+    text-align: center;
+    margin-bottom: 0.5vw;
 }
 
 .hovered_color_original_text_mobile,
@@ -240,36 +242,18 @@
     margin-bottom: 2vw;
 }
 
-.hovered_color_original {
-    text-align: center;
-    place-content: center;
-    border-radius: 1vw 1vw 0 0;
-    font-size: 1vw;
-    width: 13vw;
-    height: 3.8vw;
-    padding: 1vw;
-}
-
+.hovered_color_original,
 .hovered_color_decompressed {
     text-align: center;
     place-content: center;
     border-radius: 1vw 1vw 0 0;
     font-size: 1vw;
-    width: 13vw;
-    height: 3.8vw;
+    width: 13.2vw;
+    height: 3vw;
     padding: 1vw;
 }
 
-.hovered_color_original_mobile {
-    text-align: center;
-    place-content: center;
-    border-radius: 3vw 3vw 0 0;
-    font-size: 3vw;
-    width: 45.5vw;
-    height: 7vw;
-    padding-top: 1vw;
-}
-
+.hovered_color_original_mobile,
 .hovered_color_decompressed_mobile {
     text-align: center;
     place-content: center;
@@ -283,8 +267,8 @@
 .hovered_zoom_original,
 .hovered_zoom_decompressed {
     border-radius: 0 0 1vw 1vw;
-    width: 13vw;
-    height: 13vw;
+    width: 13.2vw;
+    height: 11vw;
 }
 
 .hovered_zoom_original_mobile,

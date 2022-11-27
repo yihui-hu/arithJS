@@ -1,15 +1,17 @@
 @import "ibm-plex.css";
 
 .upload_image_div {
+    display: block !important;
+    margin-top: 1vw;
+}
+
+.original-flex {
     display: flex;
+    gap: 1.5vw;
 }
 
 .upload_image_div_mobile {
     display: block;
-}
-
-.upload_image_sidepanel {
-    margin-left: 1.5vw;
 }
 
 a, a:hover, a:visited, a:active {
@@ -18,7 +20,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .sample_images {
-    margin-top: 8vw;
+    margin-top: 1.5vw;
+    max-width: 35vw;
     font-size: 1vw;
 }
 
@@ -44,12 +47,13 @@ a, a:hover, a:visited, a:active {
 }
 
 .compress_button {
-    width: 25vw;
+    width: 18vw;
     height: 4vw;
     border: 0px solid black;
     color: white;
     background-color: #C9D5F8;
     border-radius: 2vw 0 0 0;
+    margin-top: 1.5vw;
 }
 
 .compress_button_mobile {
@@ -80,7 +84,7 @@ a, a:hover, a:visited, a:active {
 .upload_another {
     font-size: 1vw;
     display: none;
-    margin-top: 15px;
+    margin-top: 0.5vw;
     cursor: pointer;
     transition: ease 0.2s;
 }
@@ -102,8 +106,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .upload_image_box {
-    width: 60vw;
-    height: 36vw;
+    width: 47.75vw;
+    height: 30vw;
     background: #DFE8F7;
     border-radius: 1.5vw;
     border: 2.5px solid #0057FF;
@@ -172,8 +176,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .image_canvas {
-    width: 60vw;
-    height: 36vw;
+    width: 47.75vw;
+    height: 30vw;
     background: #000000;
     border-radius: 1.5vw;
     display: none;
@@ -227,7 +231,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .compression_data {
-    margin-top: 3vw;
+    margin-top: -0.5vw;
+    max-width: 23vw;
     display: none;
 }
 
@@ -249,9 +254,15 @@ a, a:hover, a:visited, a:active {
     letter-spacing: -0.5px;
 }
 
+.percentage-flex {
+    display: flex;
+    gap: 1.5vw;
+    place-items: center;
+}
+
 .percentage_text {
+    margin-top: 1.5vw;
     font-size: 1.2vw;
-    margin-top: -1vw;
 }
 
 .percentage_text_mobile {
@@ -260,7 +271,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .compression_sizes {
-    margin-top: 0vw;
+    margin-top: -2vw;
     display: flex;
     place-items: center;
     gap: 1.4vw;

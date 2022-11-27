@@ -110,7 +110,7 @@ function read_compressed_image(file)
 {
     var reader = new FileReader();
 
-    document.getElementById("decompress_hint").style.display = "none";
+    // document.getElementById("decompress_hint").style.display = "none";
 
     reader.onload = function (progressEvent) {
         // read in ppm image

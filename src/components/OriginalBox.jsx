@@ -29,7 +29,7 @@ const OriginalBox = () => {
     return (
         <>
             <motion.div className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
                 duration: 1,
@@ -41,7 +41,7 @@ const OriginalBox = () => {
                     id="upload_image_box" 
                     onClick={handleClick}>
                     <div id="upload_image_text">
-                        <h3>Upload ppm (P6) image</h3>
+                        <h3>Compress ppm (P6) image</h3>
                         <img className={isDesktop ? "upload_blue" : "upload_blue_mobile"} src={upload_blue}/>
                     </div>
                 </div>

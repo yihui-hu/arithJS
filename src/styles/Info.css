@@ -67,3 +67,18 @@
 .highlight {
     color: #FF5C00;
 }
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(180, 180, 180);
+}
+
+.copyright-link {
+    color: rgb(180, 180, 180) !important;
+}
+
+.copyright-link:hover {
+    color:#0057FF !important;
+    transition: 0.5s ease;
+}

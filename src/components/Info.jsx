@@ -9,7 +9,7 @@ const Info = () => {
         <motion.div 
             className={isDesktop ? "info" : "info_mobile"} 
             id="info"
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
                 duration: 1,
@@ -22,7 +22,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">How to use</h4>
                     <hr></hr>
-                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith© compressed format</span>. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">HINT:</span> If you compress and decompress an image in one go and hover over it, a nifty color picker / zoom inspector will appear for you to play around with!
+                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">HINT:</span> If you compress and decompress an image in one go and hover over it, a nifty color picker / zoom inspector will appear for you to play around with!
                     </h4>
                     <br></br>
                     <h4 className="header_text">What is a ppm file?</h4>
@@ -42,12 +42,16 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Source files?</h4>
                     <hr></hr>
-                    <h4>Available <a href="https://github.com/yihui-hu/arith" target="_blank" className="link">here</a> on GitHub.
+                    <h4>Available <a href="https://github.com/yihui-hu/arith" target="_blank" className="link">here</a> on GitHub. Also, if you find any issues / bugs, please let me know via email → yyihui.hu @ gmail.com. Thanks :)
                     </h4>
+                    {isDesktop ? 
+                    <>
                     <br></br>
-                    <h4 className="header_text">I found an issue / bug!</h4>
-                    <hr></hr>
-                    <h4>I'm bad. Please let me know via email → yyihui.hu @ gmail.com. Thanks :)</h4>
+                    <div className="copyright">
+                        <h4>© 2022 Hu Yihui</h4>
+                        <h4><a className="copyright-link" href="https://yhhu.design" target="_blank">View my other works ↗</a></h4>
+                    </div> 
+                    </> : ""}
                 </div>
                 <div className={isDesktop ? "info_card_right" : "info_card_right_mobile"}>
                     <h3>✎ Notes</h3>
@@ -71,6 +75,14 @@ const Info = () => {
                     <hr></hr>
                     <h4>The app expects a clean, well-formed ppm file without any comments. It also doesn't work well with images with transparent backgrounds.
                     </h4>
+                    {isDesktop ? "" :
+                    <>
+                    <br></br>
+                    <div className="copyright">
+                        <h4>© 2022 Hu Yihui</h4>
+                        <h4><a className="copyright-link" href="https://yhhu.design" target="_blank">Other works ↗</a></h4>
+                    </div> 
+                    </>}
                 </div>
             </div>
         </motion.div>

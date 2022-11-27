@@ -24,7 +24,7 @@ const CompressedBox = () => {
         <>
             <motion.div 
                 className={isDesktop ? "upload_image_div" : "upload_image_div_mobile"}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                     duration: 1,
@@ -33,7 +33,7 @@ const CompressedBox = () => {
                 }}>
                 <div className={isDesktop ? "upload_d_image_box" : "upload_d_image_box_mobile"} id="upload_d_image_box" onClick={handleClick}>
                     <div id="upload_d_image_text">
-                        <h3>Upload arith© compressed image</h3>
+                        <h3>Decompress arith© image</h3>
                         <img className={isDesktop ? "upload_orange" : "upload_orange_mobile"} src={upload_orange}/>
                     </div>
                 </div>

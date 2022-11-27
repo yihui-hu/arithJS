@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <motion.div 
             className="header"
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
                 duration: 1,

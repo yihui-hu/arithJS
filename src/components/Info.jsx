@@ -22,10 +22,10 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">How to use</h4>
                     <hr></hr>
-                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">HINT:</span> Compress then decompress an image in one go and hover over it — a nifty color picker & zoom inspector will appear for you to play around with!
+                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">TIP:</span> Compress then decompress an image in one go and mouse over/tap on it — a nifty color picker & zoomed-in views will appear for you to play around with!
                     </h4>
                     <br></br>
-                    <h4 className="header_text">What is a ppm file?</h4>
+                    <h4 className="header_text">What's a ppm file?</h4>
                     <hr></hr>
                     <h4>PPM stands for Portable Pixmap Format. It's essentially another image format not unlike png or jpg. It's good for data parsing because ppm images store the RGB values of pixels (or representations of it) in plaintext. It's not practical outside of that because they're huge in size and "egregiously inefficient". You can read more about the format <a className="link" href="https://netpbm.sourceforge.net/doc/ppm.html" target="_blank">here</a>.
                     </h4>
@@ -37,12 +37,12 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Origin of the project</h4>
                     <hr></hr>
-                    <h4>arith began as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
+                    <h4>arith began as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters, and then some, to build and polish the frontend.
                     </h4>
                     <br></br>
                     <h4 className="header_text">Source files?</h4>
                     <hr></hr>
-                    <h4>Available <a href="https://github.com/yihui-hu/arith" target="_blank" className="link">here</a> on GitHub. Also, if you find any issues / bugs, please let me know via email → yyihui.hu @ gmail.com. Thanks :)
+                    <h4>Available <a href="https://github.com/yihui-hu/arith" target="_blank" className="link">here</a> on GitHub. Also, if you find any issues / bugs, please let me know via email → yyihui.hu @ gmail.com. Thanks in advance :)
                     </h4>
                     {isDesktop ? 
                     <>
@@ -68,7 +68,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Decompressor produces a P3 ppm image? <br></br> Why not P6 like the original?</h4>
                     <hr></hr>
-                    <h4>JS can't write ASCII characters above 127, at least not without a custom encoding table. Might get around to it some time later but I'm swamped with final projects. At least you get to see the RGB vals in plain text; feature, not bug :)
+                    <h4>JS can't write ASCII characters above 127, at least not without a custom encoding table. Might get around to it some time later but I'm swamped with other work / projects. At least you get to see the RGB vals in plain text; feature, not bug :)
                     </h4>
                     <br></br>
                     <h4 className="header_text">Known issues / bugs / oversights </h4>

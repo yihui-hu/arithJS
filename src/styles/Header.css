@@ -6,11 +6,6 @@
 .header_info {
     display: flex;
     justify-content: space-between;
-}
-
-.header_left {
-    display: flex;
-    gap: 1vw;
     place-items: center;
 }
 
@@ -19,22 +14,17 @@
     margin-top: 1vw;
 }
 
-.info {
-    display: flex;
-    gap: 1vw;
-    place-items: center;
-}
-
-.percent_indicator {
-    font-size: 1.1vw;
+.hr_mobile {
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 3vw;
 }
 
 .arith_logo {
-    width: 7vw;
+    width: 10vw;
 }
 
 .arith_logo_mobile {
-    width: 20vw;
+    width: 25vw;
 }
 
 .info_icon {
@@ -43,9 +33,4 @@
 
 .info_icon_mobile {
     width: 6vw;
-}
-
-.hr_mobile {
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 1vw;
 }

@@ -22,7 +22,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">How to use</h4>
                     <hr></hr>
-                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">HINT:</span> If you compress and decompress an image in one go and hover over it, a nifty color picker / zoom inspector will appear for you to play around with!
+                    <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">HINT:</span> Compress then decompress an image in one go and hover over it — a nifty color picker & zoom inspector will appear for you to play around with!
                     </h4>
                     <br></br>
                     <h4 className="header_text">What is a ppm file?</h4>
@@ -37,7 +37,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Origin of the project</h4>
                     <hr></hr>
-                    <h4>arith started as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
+                    <h4>arith began as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters.
                     </h4>
                     <br></br>
                     <h4 className="header_text">Source files?</h4>
@@ -63,7 +63,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">On porting C code to JavaScript</h4>
                     <hr></hr>
-                    <h4>JS has no built-in integer types, so manipulating bits is weird. I had to do it manually with strings: "101010". JS also doesn't have native support for reading / writing all 256 ASCII characters, so I had to design my own decoding table that mapped each value between 0-255 to a UTF-8 character. There are other quirks with porting C to JS; might do a more comprehensive write-up in a few.
+                    <h4>JS has no built-in integer types, so manipulating bits is weird. I had to do it manually with strings: "101010". JS also doesn't have native support for reading / writing all 256 ASCII characters, so I had to design my own decoding table that mapped each value between 0-255 to a UTF-8 character. And so many other quirks that I'd like to do a more comprehensive write-up on in the future.
                     </h4>
                     <br></br>
                     <h4 className="header_text">Decompressor produces a P3 ppm image? <br></br> Why not P6 like the original?</h4>

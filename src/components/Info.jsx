@@ -73,7 +73,7 @@ const Info = () => {
                     <br></br>
                     <h4 className="header_text">Known issues / bugs / oversights </h4>
                     <hr></hr>
-                    <h4>The app expects a clean, well-formed ppm file without any comments. It also doesn't work well with images with transparent backgrounds.
+                    <h4>The app does not work well with images with transparent backgrounds, and large files either take a while or completely crash the site (mostly on mobile).
                     </h4>
                     {isDesktop ? "" :
                     <>

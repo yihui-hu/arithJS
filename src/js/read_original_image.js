@@ -116,8 +116,6 @@ function do_actual_reading(data)
         return textFile;
     };
 
-    // calculate data and add to divs to display later
-
     // display download link of compressed image file
     var link = document.getElementById('download_link');
     var button = document.getElementById('compress_button');

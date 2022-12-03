@@ -8,10 +8,12 @@ var c_canvas;
 var o_canvas;
 var c_ctx;
 var o_ctx;
+
 var hovered_color_original;
 var hovered_color_decompressed;
 
-function resizeCompressedCanvas() {
+function resizeCompressedCanvas() 
+{
     c_canvas.width = c_width;
     c_canvas.height = c_height;
 }
@@ -42,8 +44,9 @@ function pick(event, destination) {
     var sx = c_width / client_width;
     var sy = c_height / client_height;
 
-    x = (x * sx)|0;  // scale and cut any fraction to get integer value
-    y = (y * sy)|0;
+    // scale and cut any fraction to get integer value
+    x = (x * sx) | 0;
+    y = (y * sy) | 0;
 
     const pixel_decompressed = c_ctx.getImageData(x, y, 1, 1);
     const data_decompressed = pixel_decompressed.data;
@@ -78,8 +81,6 @@ function pick(event, destination) {
     document.getElementById("hovered_color_original_text").textContent = "Original";
     document.getElementById("hovered_color_decompressed_text").textContent = "Decompressed";
 
-    // now ZOOMING
-
     const hovered_zoom_original_ctx = document.getElementById("hovered_zoom_original").getContext("2d");
     hovered_zoom_original_ctx.imageSmoothingEnabled = false;
     hovered_zoom_original_ctx.mozImageSmoothingEnabled = false;
@@ -110,8 +111,6 @@ function read_compressed_image(file)
 {
     var reader = new FileReader();
 
-    // document.getElementById("decompress_hint").style.display = "none";
-
     reader.onload = function (progressEvent) {
         // read in ppm image
         const text = this.result;
@@ -130,7 +129,6 @@ function read_compressed_image(file)
                         decompressed_image.width);
         resizeCompressedCanvas();
         c_ctx.putImageData(c_imageData, 0, 0);
-
 
         if (o_canvas.width == c_canvas.width ||
             o_canvas.height == c_canvas.height) {
@@ -175,7 +173,6 @@ function read_compressed_image(file)
     });
 
     reader.readAsText(file);
-
 };
 
 export { read_compressed_image }

@@ -1,3 +1,6 @@
+// skip step for reading in user-uploaded ppm file
+// to compress sample images provided on the site
+
 import { do_actual_reading } from '../js/read_original_image';
 import { toroinoue } from '../samples/toroinoue';
 import { maplestory } from '../samples/maplestory';

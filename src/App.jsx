@@ -1,9 +1,8 @@
-import { useState } from 'react'
+import './styles/App.css'
 import OriginalBox from './components/OriginalBox'
 import CompressedBox from './components/CompressedBox'
 import Header from './components/Header'
 import Info from './components/Info'
-import './styles/App.css'
 import useMediaQuery from './hooks/useMediaQuery'
 
 function App() {

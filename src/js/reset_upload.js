@@ -1,3 +1,5 @@
+// reset elements on screen when user chooses to upload another image
+
 function resetCommon() {
     document.getElementById("hovered_color_decompressed").style.background = "";
     document.getElementById("hovered_color_decompressed").textContent = "";

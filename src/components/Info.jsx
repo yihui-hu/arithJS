@@ -37,7 +37,7 @@ const Info = () => {
           <br></br>
           <h4 className="header_text">Origin of the project</h4>
           <hr></hr>
-          <h4>arith began as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters, and then some, to build and polish the frontend.
+          <h4>arith began as a CLI image compressor / decompressor that my friend Toby and I built in C for a college class. It was a cool enough project for me to want to put on the web. But I couldn't figure out how to get C code to run on a web server, so I ported all the code over to JavaScript. It took about a week of all-nighters to build, and then some, to polish the frontend.
           </h4>
           <br></br>
           <h4 className="header_text">Source files?</h4>

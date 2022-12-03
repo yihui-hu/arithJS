@@ -22,7 +22,7 @@ const Info = () => {
           <br></br>
           <h4 className="header_text">How to use</h4>
           <hr></hr>
-          <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">TIP:</span> Compress then decompress an image in one go and mouse over/tap on it — a nifty color picker & zoomed-in views will appear for you to play around with!
+          <h4>Upload a ppm (P6) image and it's automatically compressed into what I call the <span className="italic">arith©</span> format. If you ever receive a file in that format, you can decompress it back into a ppm (P3) image using this site as well! <span className="highlight">TIP:</span> Compress then decompress an image in one go and mouse over/tap on it — a nifty color picker & zoomed-in view will appear for you to play around with!
           </h4>
           <br></br>
           <h4 className="header_text">What's a ppm file?</h4>
@@ -58,7 +58,7 @@ const Info = () => {
           <br></br>
           <h4 className="header_text">Performance differences from C</h4>
           <hr></hr>
-          <h4>From what limited testing I did, the JS implementation (with little to no optimization from my end) seems to run between ~10x to ~30x slower than C. Timing results available <a className="link" href="https://gist.github.com/yihui-hu/484c31bdbf6a73192b8044aa67a0972e" target="_blank">here</a>.
+          <h4>From what limited testing I did, the JS implementation (with little to no optimization from my end) seems to run between ~10x to ~30x slower than the original code in C. Timing results available <a className="link" href="https://gist.github.com/yihui-hu/484c31bdbf6a73192b8044aa67a0972e" target="_blank">here</a>.
           </h4>
           <br></br>
           <h4 className="header_text">On porting C code to JavaScript</h4>
